@@ -8,6 +8,6 @@ AzureAnchors (He/Him) - Programming
 Pickled_Pyper(She/Her, They/Them) - Art
 
 
-Azure can be found at pillar.io/azureanchors
+Azure can be found at https://pillar.io/azureanchors
 
 Pyper can be found at https://pickledpyper.carrd.co/
