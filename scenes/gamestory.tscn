@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://djuc0d8ha6lxe"]
+
+[node name="MarginContainer" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 120
+theme_override_constants/margin_top = 80
+theme_override_constants/margin_right = 120
+theme_override_constants/margin_bottom = 80
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "The straights have had a chokehold on the dairy industry for far too long.
+
+Our story takes place on a small farm. 
+With only one cow, two people will revolutionize the dairy industry.
+
+
+[color=#FF4242]I[/color][color=#FF6542]t[/color] [color=#FF8742]i[/color][color=#FFA942]s[/color] [color=#FFCC42]t[/color][color=#FFEE42]i[/color][color=#EEFF42]m[/color][color=#CCFF42]e[/color] [color=#A9FF42]t[/color][color=#87FF42]o[/color] [color=#65FF42]m[/color][color=#42FF42]a[/color][color=#42FF65]k[/color][color=#42FF87]e[/color] [color=#42FFA9]t[/color][color=#42FFCC]h[/color][color=#42FFEE]e[/color] [color=#42EEFF]m[/color][color=#42CCFF]i[/color][color=#42A9FF]l[/color][color=#4287FF]k[/color] [color=#4265FF]g[/color][color=#4242FF]a[/color][color=#6542FF]y[/color][color=#8742FF].[/color] [color=#A942FF]A[/color][color=#CC42FF]l[/color][color=#EE42FF]l[/color] [color=#FF42EE]o[/color][color=#FF42CC]f[/color] [color=#FF42A9]i[/color][color=#FF4287]t[/color][color=#FF4265].[/color]
+"
+fit_content = true
+autowrap_mode = 0
+
+[node name="Button" type="Button" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Let's Make Some Gay Milk!"
