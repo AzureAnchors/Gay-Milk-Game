@@ -1,10 +1,57 @@
-[gd_scene format=3 uid="uid://dxtv6c7rji31t"]
+[gd_scene load_steps=6 format=3 uid="uid://dxtv6c7rji31t"]
 
-[node name="MarginContainer" type="MarginContainer"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
+[ext_resource type="Texture2D" uid="uid://ci3dtq0xi3ggn" path="res://images/market/fulltable.png" id="1_6shak"]
+[ext_resource type="Texture2D" uid="uid://4ejeb7t6elqu" path="res://images/market/background.png" id="1_f3l8b"]
+[ext_resource type="Texture2D" uid="uid://fnn8l24b60l6" path="res://images/farm/sunshine.png" id="2_voddl"]
+[ext_resource type="Script" path="res://scripts/quit.gd" id="5_3hqx6"]
+[ext_resource type="FontFile" uid="uid://dp8450cwbou51" path="res://fonts/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf" id="13_oun1o"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(966, 506)
+scale = Vector2(0.321333, 0.2545)
+texture = ExtResource("1_f3l8b")
+
+[node name="Sunshine" type="Sprite2D" parent="."]
+position = Vector2(1175, 481)
+scale = Vector2(0.367291, 0.302382)
+texture = ExtResource("2_voddl")
+
+[node name="Table" type="Sprite2D" parent="."]
+position = Vector2(966.5, 391)
+scale = Vector2(0.3205, 0.31)
+texture = ExtResource("1_6shak")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color(0.854902, 0.239216, 1, 1)
+offset_left = 131.0
+offset_top = 47.0
+offset_right = 781.0
+offset_bottom = 352.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 155.0
+offset_top = 60.0
+offset_right = 766.0
+offset_bottom = 320.0
+theme_override_fonts/normal_font = ExtResource("13_oun1o")
+theme_override_font_sizes/normal_font_size = 65
+bbcode_enabled = true
+text = "[color=#FF0000]Y[/color][color=#FF8B00]O[/color][color=#E8FF00]U[/color] [color=#5DFF00]D[/color][color=#00FF2E]I[/color][color=#00FFB9]D[/color] [color=#00B9FF]I[/color][color=#002EFF]T[/color][color=#5D00FF]![/color][color=#E800FF]![/color][color=#FF008B]![/color]
+I'm So [color=#FF0000]p[/color][color=#CCFF00]r[/color][color=#00FF66]o[/color][color=#0066FF]u[/color][color=#CC00FF]d[/color] of you!
+"
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 345.0
+offset_top = 498.0
+offset_right = 542.0
+offset_bottom = 631.0
+theme_override_fonts/font = ExtResource("13_oun1o")
+theme_override_font_sizes/font_size = 64
+text = "Quit"
+script = ExtResource("5_3hqx6")
+
+[connection signal="pressed" from="Quit" to="Quit" method="_on_pressed"]

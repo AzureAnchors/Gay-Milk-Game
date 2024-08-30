@@ -1,13 +1,11 @@
-https://itch.io/jam/wild-and-proud
+# [Wild and Proud Jam](https://itch.io/jam/wild-and-proud)
 
-Team members
-
+Team Members
 
 AzureAnchors (He/Him) - Programming
 
 Pickled_Pyper(She/Her, They/Them) - Art
 
+Azure can be found at <https://pillar.io/azureanchors>
 
-Azure can be found at https://pillar.io/azureanchors
-
-Pyper can be found at https://pickledpyper.carrd.co/
+Pyper can be found at <https://pickledpyper.carrd.co/>
